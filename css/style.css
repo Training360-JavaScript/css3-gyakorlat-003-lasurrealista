@@ -5,18 +5,28 @@
 * 3. felső padding: 70 pixel
 */
 
+.cta-100 {
+  margin-top: 100px;
+  padding-left: 70px;
+  padding-top: 70px;
+}
 
 /**
 * selector: col-md-4 osztály
 * 4. alsó padding: 20 pixel
 */
 
+.col-md-4 {
+  padding-bottom: 20px;
+}
 
 /**
 * selector: white oszály
 * 5. kitöltőszín: fehér
 */
-
+.white {
+  color: white;
+}
 
 /**
 * selector: mt oszály
@@ -25,9 +35,14 @@
 * 8. felső padding: 20px
 */
 
+.mt {
+  float: left;
+  margin-top: -20px;
+  padding-top: 20px;
+}
 
 .bg-blue-ui {
-  background-color: #708198 !important;
+background-color: #708198 !important;
 }
 figure img{width:300px;}
 
@@ -36,6 +51,9 @@ figure img{width:300px;}
 * 9. alsó padding: 100 pixel
 */
 
+#blogCarousel {
+  padding-bottom: 100px;
+}
 
 /**
 * selector: a blog oszályú elemen belül lévő carousel-indicators osztályú elemek
@@ -44,75 +62,93 @@ figure img{width:300px;}
 * 12. magasság: 280 pixel
 */
 
+.blog .carousel-indicators {
+  left: 0px;
+  top: -50px;
+  height: 280px;
+}
 
 /* The colour of the indicators */
 /**
 * selector: a blog oszályú elemen belül lévő carousel-indicators osztályú 
 * elemeken belül lévő li elemek
-* 13. háttérszín: 708198
+* 13. héttérszín: 708198
 * 14. szegély lekerekítése: 50 százalék
 * 15. szélesség: 8 pixel
 * 16. magasság: 8 pixel
 */
 
-
-.blog .carousel-indicators .active {
-  background: #0fc9af;
+.blog .carousel-indicators li {
+  background-color: #708198;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
 }
 
+.blog .carousel-indicators .active {
+background: #0fc9af;
+}
 
 
 
 .item-carousel-blog-block {
-  outline: medium none;
-  padding: 15px;
+outline: medium none;
+padding: 15px;
 }
 
 .item-box-blog {
-  border: 1px solid #dadada;
-  text-align: center;
-  z-index: 4;
-  padding: 20px;
+border: 1px solid #dadada;
+text-align: center;
+z-index: 4;
+padding: 20px;
 }
 
 .item-box-blog-image {
-  position: relative;
+position: relative;
 }
 
 .item-box-blog-image figure img {
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 
 /**
 * selector: item-box-blog-date osztályú elemek
 * 17. pozíció: abszolút
 * 18. mélység index: 5
-* 19. felső-alsó padding: 4 pixel
-* 20. jobb-bal padding: 20 pixel
+* 19. felső alsó padding: 4 pixel
+* 20. jobb bal padding: 20 pixel
 * 21. fentről: -20 pixel
 * 22. jobbról: 8 pixel
 * 23. háttérszín: 41cb52
 */
 
+.item-box-blog-date {
+  position: absolute;
+  z-index: 5;
+  padding: 4px 20px;
+  top: -20px;
+  right: 8px;
+  background-color: #41CB52;
+}
 
 .item-box-blog-date span {
-  color: #fff;
-  display: block;
-  text-align: center;
-  line-height: 1.2;
+color: #fff;
+display: block;
+text-align: center;
+line-height: 1.2;
 }
 
 .item-box-blog-date span.mon {
-  font-size: 18px;
+font-size: 18px;
 }
 
 .item-box-blog-date span.day {
-  font-size: 16px;
+font-size: 16px;
 }
 
 .item-box-blog-body {
-  padding: 10px;
+padding: 10px;
 }
 
 /**
@@ -121,38 +157,44 @@ figure img{width:300px;}
 * 24. margó: 0
 * 25. sormagasság: 24px
 * 26. szöveg dekoráció: kikapcsolva
-* 27. átmenet: a színekre legyen alkalmazva .3 másodperces értékkel
+* 27. átmenet: a színekre legyen alkalmazva, .3 másodperces értékkel
 */
 
+.item-box-blog-body h5 {
+  margin: 0;
+  line-height: 24px;
+  text-decoration: none;
+  background-image: linear-gradient(color, .3s);
+}
 
 .item-box-blog-heading a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .item-box-blog-data p {
-  font-size: 13px;
+font-size: 13px;
 }
 
 .item-box-blog-data p i {
-  font-size: 12px;
+font-size: 12px;
 }
 
 .item-box-blog-text {
-  max-height: 100px;
-  overflow: hidden;
+max-height: 100px;
+overflow: hidden;
 }
 
 .mt-10 {
-  float: left;
-  margin-top: -10px;
-  padding-top: 10px;
+float: left;
+margin-top: -10px;
+padding-top: 10px;
 }
 
 .btn.bg-blue-ui.white.read {
-  cursor: pointer;
-  padding: 4px 20px;
-  float: left;
-  margin-top: 10px;
+cursor: pointer;
+padding: 4px 20px;
+float: left;
+margin-top: 10px;
 }
 
 /**
@@ -161,3 +203,6 @@ figure img{width:300px;}
 * 28. doboz árnyék: x irány 0, y irány 5 pixel, méret 15 pixel, belső árnyék, szín 4d5f77
 */
 
+.btn.bg-blue-ui.white.read {
+  box-shadow: inset 0 5px #4d5f77;
+}
